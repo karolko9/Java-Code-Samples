@@ -1,0 +1,5 @@
+3. [3 punkty] Stwórz kopię kodu rozwiązującego zadanie z punktu 2 a następnie zmodyfikuj go w następujący sposób:
+Strumień danych wyjściowych i wejściowych zarówno po stronie klienta jak i serwera jest asynchroniczny
+i nie ma konieczności organizowania go na zasadzie omówionej w punkcie 2. Przerób serwer i klienta tak,
+aby mogli wysyłać i odbierać wiadomości niezależnie od siebie. Aby to zrealizować obsługa ObjectInputStream może na przykład znajdować
+się w kolejnym osobnym wątku. Proszę napisać programy tak, aby klient i sewer wysyłały dowolne wiadomości w niekończącej się pętli w losowych odstępach czasu do siebie nawzajem (serwer do klienta i klient do serwera). Proszę przetestować program uruchamiając jeden serwer i wielu klientów i wypisywać na ekran konsoli, co każdy z tych programów otrzymuje i wysyła. Proszę rónież obsużyć fakt rozłączenia klienta z serwerem tak, aby serwer wyłączał wątki, które już mu nie są potrzebne do komunikacji.

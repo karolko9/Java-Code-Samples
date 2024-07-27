@@ -1,0 +1,4 @@
+1. [4 punkty] Powyższy przykład jest napisany w taki sposób, że klient po wysłaniu komunikatu
+rozłącza się z serwerem i ponownie nawiązuje połącznie. Przez takie diałanie nie wykorzystuje 
+się właściwości protokołu TCP, który jest protokołem połączeniowym. 
+Przerób powyższy program tak, aby połączenie było nawiązywane tylko raz i trawało aż do momentu, kiedy serwet otrzyma wiadomość "exit". Po otrzymaniu tej wiadomośći serwer ma zakończyć działanie.

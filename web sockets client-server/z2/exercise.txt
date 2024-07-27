@@ -1,0 +1,6 @@
+2. [3 punkty] Stwórz kopię kodu rozwiązującego zadanie z punktu 1 a następnie zmodyfikuj go w następujący sposób:
+Serwer TCP/IP może obsłużyć wiele połączeń jednocześnie. Można to zrobić na przykład w taki sposób, że cały kod, który znajduje się po metodzie server.accept() (komunikacja pomiędzy serwerem i klientem) obsłużona zostanie w nowym wątku, natomiast główny wątek będzie obsługiwał oczekiwanie na kolejne połączenia w metodzie server.accept() w pętli (accept jest instrukcją blokującą). Napisz program, który może odbiearać wiadomości i odpisywać
+na nie równocześnie od wielu klientów. Zakładamy, że po otrzymaniu wiadomości przez serwer, serwer wysyła
+wiadomość w odpowiedzi do klienta. Komunikacja wygląda więc tak, że klient pisze coś do serwera i oczekuje na
+wiadomość zwrotną, natomiast serwer oczekuje na wiadomość od klienta i następnie wysyła do niego wiadomość.
+Komunikacja jest tu więc synchroniczna. Proszę napisać programy tak, aby klient wysyłał wiadomości w niekończącej się pętli w losowych odstępach czasu. Proszę przetestować program uruchamiając jeden serwer i wielu klientów i wypisywać na ekran konsoli, co każdy z tych programów otrzymuje i wysyła.
